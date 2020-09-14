@@ -1,27 +1,77 @@
 header.masthead {
   position: relative;
   background-color: $gray-800;
-  background: url('../img/bg-masthead.jpg') no-repeat center center;
+  background: url('../img/accountant.webp') no-repeat center center;
   @include background-cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
   .overlay {
     position: absolute;
-    background-color: $gray-900;
+    background-color: #f8f9fa;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
     opacity: 0.3;
   }
+  .logo {
+    width: 8rem;
+  }
   h1 {
-    font-size: 2rem;
+    font-family: baloo;
+    font-weight: 700;
+    color: #000;
+    font-size: 5rem;
+  }
+  p {
+    font-family: montserrat;
+    font-weight: 400;
+    color: #676c71;
+    font-size: 1.2rem;
+    margin-top: -10px;
+  }
+  button {
+    width: 30%;
   }
   @media (min-width: 768px) {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-top: 9rem;
+    padding-bottom: 10rem;
     h1 {
       font-size: 3rem;
+    }
+  }
+  @media (max-width: 768px) {
+    background: none;
+  }
+  @media (max-width: 414px) {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    h1 {
+        font-size: 4rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    button {
+        width: 35%;
+    }
+    .logo {
+        width: 8rem;
+    }
+  }
+
+  @media (max-width: 320px) {
+    padding-top: 4rem;
+    padding-bottom: 7rem;
+    background: none;
+    h1 {
+        font-size: 3.5rem;
+    }
+    button {
+        width: 40%;
+    }
+    .logo {
+        width: 7rem;
     }
   }
 }
